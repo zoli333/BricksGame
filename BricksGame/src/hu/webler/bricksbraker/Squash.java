@@ -2,8 +2,7 @@
  * This is a simple bricks breaker program written in java. Hopefully somebody will find
  * it useful.
  * 
- * for a course in java. Thanks for the Webler educational studio's teacher
- * Istvan Bakos to explain, and teach the more simpler version of this program and the from
+ * Thanks for the Webler educational studio's teacher Istvan Bakos to explain, and teach the more simpler version of this program and the from
  * Princeton University Mr. Sedgewick And Mr. Kevin Wayne for publishing the Algorithms I 4th Edition book's code.
  * 
  * The original task was not to write a bricks breaker program, but a single ball bounce program with a paddle at the educational studio.
