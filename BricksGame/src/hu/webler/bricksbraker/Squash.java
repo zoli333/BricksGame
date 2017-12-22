@@ -66,7 +66,7 @@ import java.awt.event.ComponentListener;
 
 public class Squash implements KeyListener{
 
-	private static BufferedImage onscreenImage, offscreenImage;
+    private static BufferedImage onscreenImage, offscreenImage;
     private static Graphics2D onscreen, offscreen;
     private static JFrame frame;
     private static final int DEFAULT_WIDTH = 1000;
@@ -171,12 +171,12 @@ public class Squash implements KeyListener{
     
     public static void drawBorder() {
     	onscreen.setColor(DEFAULT_GAMETABLE_BORDER_COLOR);
-		onscreen.drawRect(0,0,width-1,height-1);
+	onscreen.drawRect(0,0,width-1,height-1);
     }
     
     public static void show() {
-		onscreen.drawImage(offscreenImage, 0, 0, null);
-		drawBorder();
+	onscreen.drawImage(offscreenImage, 0, 0, null);
+	drawBorder();
         frame.repaint();
     }
     
@@ -227,8 +227,8 @@ public class Squash implements KeyListener{
 		JLabel draw = new JLabel(icon);
 		frame.setContentPane(draw);
 		frame.addKeyListener(std);
-        frame.pack();
-        frame.requestFocusInWindow();
+        	frame.pack();
+        	frame.requestFocusInWindow();
 		frame.setVisible(true);
 		
 	}
@@ -239,9 +239,9 @@ public class Squash implements KeyListener{
 		if(Squash.startGame){
 			pause(1000);
 		}
-        synchronized (keyLock) {
-            return keysDown.contains(keycode);
-        }
+        	synchronized (keyLock) {
+            		return keysDown.contains(keycode);
+        	}
     }
 	
 	@Override
@@ -260,16 +260,16 @@ public class Squash implements KeyListener{
 			Squash.startGame=false;
 		}
 		synchronized (keyLock) {
-            keysDown.add(e.getKeyCode());
-        }
+	            keysDown.add(e.getKeyCode());
+	        }
 		
 	}
 	
 	@Override
 	public void keyReleased(KeyEvent e) {
 		synchronized (keyLock) {
-            keysDown.remove(e.getKeyCode());
-        }
+        	    keysDown.remove(e.getKeyCode());
+        	}
 	}
 	
 	public static void addBall() {
