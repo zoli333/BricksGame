@@ -1,4 +1,5 @@
-<Ball.java>
+/*
+    Ball.java
     Copyright (C) <2017>  <Zoltan Nagy>
 
     This program is free software: you can redistribute it and/or modify
@@ -13,7 +14,11 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+    
+    I you have any questions please send me an email to the following address:
+    nagyzoli.g@gmail.com
+    
+*/
 
 package hu.webler.bricksbraker;
 
