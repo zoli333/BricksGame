@@ -15,8 +15,10 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
-    I you have any questions please send me an email to the following address:
+    If you have any questions please send me an email to the following address:
     nagyzoli.g@gmail.com
+    
+    Or if you have any comments feel free to write me directly on github issues
     
 */
 
