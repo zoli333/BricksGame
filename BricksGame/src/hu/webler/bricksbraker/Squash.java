@@ -17,8 +17,10 @@
     
     This is the main program jun can compile and run with java.
     
-    I you have any questions please send me an email to the following address:
+    If you have any questions please send me an email to the following address:
     nagyzoli.g@gmail.com
+    
+    Or if you have any comments feel free to write me directly on github issues
     
 */
 
@@ -35,8 +37,14 @@
  * write a bricks breaker for practicing java, and graphics.
  * 
  * The code uses the Princeton University's Algorithms 4th Edition book's stdDraw.java
- * class to create the animation part. 
- * 
+ * class to create the animation part.
+ * Methods used from StdDraw.java class:
+ *  - Static classes, static frames onscreen and offscreen BufferedImages.
+ *  - Using the synchronized method for the keyPressed and keyReleased method from the book code.
+ *  - Using the static object drawing functions.
+ *  - Double-buffering
+ *  - static method for initialization (init), callback function for init static class
+ *
  * Ball, Brick and Paddle are different objects. Paddle is a static method,
  * it is always stored in memory while we are playing the game. Ball, and brick classes
  * are threaded to have their own Thread sleep parameter. 
