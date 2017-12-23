@@ -121,7 +121,7 @@ public class Ball extends Thread {
 		
 	}
 	
-	public boolean utoAlattTeszt() {
+	public boolean groundTest() { //game over when the ball hits the ground (and missed the paddle)
 		if(ypos>Squash.paddle.getYpos()+Squash.paddle.getPaddleHeight()){
 			return true;
 		}else{
