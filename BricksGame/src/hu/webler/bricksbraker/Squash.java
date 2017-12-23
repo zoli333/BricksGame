@@ -381,7 +381,7 @@ public class Squash implements KeyListener{
 			
 			for(Ball b : balls){
 				if(!Squash.eternalLife){
-					if(b.utoAlattTeszt()){
+					if(b.groundTest()){
 						System.out.println("YOU LOST!");
 						restartGame();
 						break;
