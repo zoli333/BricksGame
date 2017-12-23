@@ -98,9 +98,9 @@ public class Ball extends Thread {
 	}
 	
 	
-	public void WallTest() { //jobb vagy balra kiutkozott e a labdank
-		if ((xpos<=0 && vX<0) || //bal oldai fal 
-			(xpos>=Squash.getWidth()-diameter && vX>0)) //jobboldali fal
+	public void WallTest() { //if the ball bounced with right or left wall
+		if ((xpos<=0 && vX<0) || //left-wall bounce
+			(xpos>=Squash.getWidth()-diameter && vX>0)) //right-wall bounce
 		{ 
 			vX=-vX;
 		}
@@ -157,7 +157,7 @@ public class Ball extends Thread {
 			//System.out.println(x0+", "+y0);
 			
 			//compute the derivate of the normal equation of the circle 
-			//which is defined around the paddle with radis utoRadius
+			//which is defined around the paddle with radis paddleRadius
 			//f(x,y)=x^2+y^2-r^2
 			double normalX=2*x0;
 			double normalY=2*y0;
@@ -195,7 +195,7 @@ public class Ball extends Thread {
 	 * The y axis goes from 0 to canvas size downwards, from this It is clear why we have to invert the y0 point, because the y axis 
 	 * points downward as default, so if we want to compute the y0 coordinate from the circle's upper half, we have to invert
 	 * the computed y0 point, to get upward direction.   
-	public void utoTeszt() { 
+	public void PaddleTest() { 
 		if(ballCenterY < Squash.paddle.getYpos() && 
 		   ballCenterY > Squash.paddle.getYpos()-radius &&
 		   ballCenterX > Squash.paddle.getXpos()-radius &&
@@ -237,7 +237,7 @@ public class Ball extends Thread {
 	*/
 	
 	
-	public void brickTeszt() {
+	public void brickTest() {
 		for(int i=0;i<bricks.size();i++){
 			Brick brick = bricks.get(i);
 			if(!brick.isCrashed()){
@@ -302,7 +302,7 @@ public class Ball extends Thread {
 		vY=vY+gravity;
 		WallTest();
 		CeilingTest();
-		brickTeszt();
+		brickTest();
 		PaddleTest();
 		xpos+=vX;
 		ypos+=vY;
