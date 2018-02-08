@@ -28,10 +28,6 @@
  * This is a simple bricks breaker program written in java. Hopefully somebody will find
  * it useful.
  *
- * The original task was not to write a bricks breaker program, but a single ball bounce program with a paddle at the educational studio.
- * However I thought it would be useful for learning purposes to 
- * write a bricks breaker for practicing java, and graphics.
- * 
  * The code uses the Princeton University's Algorithms 4th Edition book's stdDraw.java
  * class to create the animation part.
  * Methods used from StdDraw.java class:
