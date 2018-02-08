@@ -27,10 +27,7 @@
 /*
  * This is a simple bricks breaker program written in java. Hopefully somebody will find
  * it useful.
- * 
- * Thanks for the Webler educational studio's teacher Istvan Bakos to explain, and teach the more simpler version of this program and the from
- * Princeton University Mr. Sedgewick And Mr. Kevin Wayne for publishing the Algorithms I 4th Edition book's code.
- * 
+ *
  * The original task was not to write a bricks breaker program, but a single ball bounce program with a paddle at the educational studio.
  * However I thought it would be useful for learning purposes to 
  * write a bricks breaker for practicing java, and graphics.
@@ -44,20 +41,6 @@
  *  - Double-buffering
  *  - static method for initialization (init), callback function for init static class
  *
- * I also found useful to watch Daniel Shiffman Coding Train channel's video:
- * Guest Tutorial #5: Brick Breaker with Yining Shi. It helped me writing the paddle and ball bouncing part.
- *
- * Some technical informations:
- * Ball, Brick and Paddle are different objects. Paddle is a static method,
- * it is always stored in memory while we are playing the game. Ball, and brick classes
- * are threaded to have their own Thread sleep parameter. 
- * Ball class has a parameter, a vector with brick objects. This way the ball and brick
- * thread will be "synchronized", so the same thread will be making to move the balls and animate
- * the bricks on the canvas.
- * 
- * The bouncing with the ball and the paddle is specified by a special mathematical formula
- * highly detailed
- * 
  * The sound is from a stackoverflow answer also in the ball class.
  * On Windows systems it is stable, but on linux after a time the sound freezes, but the game works
  * anyway
